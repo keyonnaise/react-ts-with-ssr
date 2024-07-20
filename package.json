@@ -1,0 +1,10 @@
+{
+  "name": "react-ts-with-ssr",
+  "packageManager": "yarn@4.3.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  }
+}

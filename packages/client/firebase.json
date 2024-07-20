@@ -1,0 +1,19 @@
+{
+  "functions": [
+    {
+      "runtime": "nodejs20",
+      "source": "./dist/server",
+      "codebase": "default"
+    }
+  ],
+  "hosting": {
+    "public": "dist/client",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "render"
+      }
+    ]
+  }
+}
